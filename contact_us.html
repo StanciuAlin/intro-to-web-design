@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <a href="index.html">Home</a>
+    <a href="about_us.html">About Us</a>
+    <a href="contact_us.html">Contact Us</a>
+
+    <h1 style="color: coral;">Contact Us</h1>
+    <hr />
+
+    <h2>Locations</h2>
+    <table>
+        <tr>
+            <th>Logo</th>
+            <th>Location</th>
+            <th>Opening Hours</th>
+            <th>Email Address</th>
+            <th>Phone Number</th>
+        </tr>
+        <tr>
+            <td>
+                <img src="" alt="logo" />
+            </td>
+            <td>Kingston</td>
+            <td>9:00 - 17:00</td>
+            <td>kingston@preservation.com</td>
+            <td>63525246</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="" alt="logo" />
+            </td>
+            <td>Montego Bay</td>
+            <td>9:00 - 17:00</td>
+            <td>mobay@preservation.com</td>
+            <td>62857463452</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="" alt="logo" />
+            </td>
+            <td>Las Vegas</td>
+            <td>9:00 - 17:00</td>
+            <td>lasvegas@preservation.com</td>
+            <td>452462446</td>
+        </tr>
+    </table>
+
+    <h2>General Inquiries</h2>
+    <form action="confirmation.html">
+        <label for="fullname">Name *</label><br/> <!-- for attribute corresponds with the id attribute of the control -->
+        <input required type="text" id="fullname" name="fullname" />
+        <br/><br/>
+        <!-- id is for FrontEnd stuff and name is for BackEnd stuff -->
+        <label for="email">Email Address *</label><br/>
+        <input required type="email" id="email" name="email" />
+        <br/><br/>
+        <label>Are you employed?</label><br/>
+        <input type="radio" value="Y" name="employed"/> Yes <br/>
+        <input type="radio" value="N" name="employed"/> No
+        <br/><br/>
+        <label for="inquiry">State your inquiry *</label><br/>
+        <textarea required cols="50" rows="8" maxlength="150" id="inquiry" name="inquiry"></textarea>
+        <br/><br/>
+        <input type="submit" />
+    </form>
+
+</body>
+
+</html>
