@@ -1,36 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <link rel="stylesheet" href="stylesheets/site.css" />
 </head>
+
 <body>
-    <a href="index.html">Home</a>
-    <a href="about_us.html">About Us</a>
-    <a href="contact_us.html">Contact Us</a>
+    <header>
+        <div id="banner">
+            <p>Notification</p>
+        </div>
+        <nav> <!-- semantic tag for nav bar -->
+            <a href="index.html">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="contact_us.html">Contact Us</a>
+        </nav>
+    </header>
 
-    <h1 style="color: coral;">About Us</h1>
-    <hr/>
-    <h2>Doggy House</h2>
-    <img src="/images/dog.jpg" alt="A small pretty dog" height="256" width="400" />
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <main> <!-- semantic tag for the main content of the website -->
+        <h1>About Us</h1>
+        <hr />
+        <article>
+            <h2>Doggy House</h2>
+            <img src="/images/dog.jpg" alt="A small pretty dog" height="256" width="400" />
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's
+                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                to
+                make
+                a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                typesetting,
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                containing
+                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+                versions
+                of Lorem Ipsum.</p>
+        </article>
+        
+        <article>
 
-    <h2>Daily Tasks</h2>
-    <ul>
-        <li>Eat</li>
-        <li>Sleep</li>
-        <li>Play with the ball</li>
-    </ul>
+            <h2>Daily Tasks</h2>
+            <ul>
+                <li>Eat</li>
+                <li>Sleep</li>
+                <li>Play with the ball</li>
+            </ul>
+        </article>
 
-    <h2>Top 3 favorite activities</h2>
-    <ol>
-        <li>Play with the family members</li>
-        <li>Play with the ball</li>
-        <li>Eat</li>
-        <li>
-            <a href="contact_us.html">Contact my family</a>
-        </li>
-    </ol>
+        <article>
+            <h2>Top 3 favorite activities</h2>
+            <ol>
+                <li>Play with the family members</li>
+                <li>Play with the ball</li>
+                <li>Eat</li>
+                <li>
+                    <a href="contact_us.html">Contact my family</a>
+                </li>
+            </ol>
+        </article>
+    </main>
+    <footer> <!-- semantic tag for footer -->
+        <br /><br />
+        <a href="https://www.google.com" target="_blank">Search on Google</a>
+    </footer>
 </body>
+
 </html>

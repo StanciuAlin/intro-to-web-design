@@ -1,0 +1,86 @@
+h1 {
+    color: rgb(51, 94, 172);
+}
+
+h2 {
+    color: red;
+    text-decoration: overline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#banner {
+    background-color: darkkhaki;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+#banner p {
+    margin: 0;
+}
+
+#nav, nav {
+    background-color: cadetblue;
+    padding: 10px; /* make element bigger */
+    text-align: center;
+}
+
+#nav a, nav a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: x-large;
+    margin-right: 10px; /* push everything in a particular direction*/
+    padding: 10px;
+}
+
+#nav a:hover {
+    background-color: aquamarine;
+    color: cadetblue;
+}
+
+nav a:hover {
+    background-color: aquamarine;
+    color: cadetblue;
+}
+
+#footer, footer {
+    background-color: #E7E9EB;
+    min-height: 150px;
+    text-align: center;
+}
+
+#footer a, footer a {
+    color: gray;
+    text-decoration: overline;
+}
+
+#main, main {
+    width: 80%;
+    margin: 0 auto; /* nothing at the top and auto on all other sides*/
+}
+
+article {
+    margin-bottom: 50px;
+}
+
+.logo {
+    height: 50px;
+    width: 38px;
+}
+
+.differentLookingText {
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.WeirdColor {
+    color:darkmagenta;
+}

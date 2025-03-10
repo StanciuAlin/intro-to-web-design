@@ -3,45 +3,60 @@
 
 <head>
     <title>Home Page</title>
+    <link rel="stylesheet" href="stylesheets/site.css" />
 </head>
 
 <body>
-    <!-- Anchor tags used for internal navigation -->
-    <a href="index.html">Home</a>
-    <a href="about_us.html">About Us</a>
-    <a href="contact_us.html">Contact Us</a>
-    <h1 style="color: coral;">Home Page</h1>
-    <hr />
+    <div id="header">
+        <div id="banner">
+            <p>Random website notification</p>
+        </div>
+        <div id="nav">
+            <!-- Anchor tags used for internal navigation -->
+            <a href="index.html">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="contact_us.html">Contact Us</a>
+        </div>
+    </div>
+    <div id="main">
+        <h1>Home Page</h1>
+        <!-- Sample iframe embedding YouTube video -->
+        <h2>Welcome to my page! Please enjoy the music</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YnHJCs0Yjoo?si=PiO0-oSCzW7riB3E"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <hr />
+        <h2>Learning Website Development Technologies</h2>
 
-    <!-- Sample iframe embedding YouTube video -->
-    <h2>Welcome to my page! Please enjoy the music</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/YnHJCs0Yjoo?si=PiO0-oSCzW7riB3E"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <hr />
-    <h2>Learning Website Development Technologies</h2>
+        <p class="differentLookingText WeirdColor">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the
+            industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+            make
+            a type specimen book. It has survived not only five centuries, but also the leap into electronic
+            typesetting,
+            remaining essentially unchanged. <br> <br> It was popularised in the 1960s with the release of Letraset
+            sheets
+            containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+            including versions of Lorem Ipsum.</p>
 
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-        remaining essentially unchanged. <br> <br> It was popularised in the 1960s with the release of Letraset sheets
-        containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
-        including versions of Lorem Ipsum.</p>
-
-    <!-- Embedding video and audio -->
-    <h2>Custom video</h2>
-    <video width="560" height="315" controls>
-        <source src="videos/videoplayback.mp4" type="video/mp4" />
-        Your browser does not support the video format
-    </video>
-    <br />
-    <audio controls>
-        <source src="music/videoplayback.mp3" type="video/mpeg" />
-        Your browser does not support the audio format
-    </audio>
-
-    <a href="https://www.google.com" target="_blank">Search on Google</a>
+        <!-- Embedding video and audio -->
+        <h2>Custom video</h2>
+        <video width="560" height="315" controls>
+            <source src="videos/videoplayback.mp4" type="video/mp4" />
+            Your browser does not support the video format
+        </video>
+        <br />
+        <audio controls>
+            <source src="music/videoplayback.mp3" type="video/mpeg" />
+            Your browser does not support the audio format
+        </audio>
+    </div>
+    <div id="footer">
+        <br /><br />
+        <a href="https://www.google.com" target="_blank">Search on Google</a>
+    </div>
 </body>
 
 </html>
