@@ -64,10 +64,10 @@
         </article>
         <article>
             <h2>General Inquiries</h2>
-            <form action="confirmation.html">
+            <form action="confirmation.html" id="contactForm">
                 <!-- for attribute corresponds with the id attribute of the control -->
                 <label for="fullname">Name *</label><br />
-                <input required type="text" id="fullname" name="fullname" />
+                <input required type="text" id="fullname" name="fullname" />  <!-- Here, we have a value attribute -->
                 <br /><br />
                 <!-- id is for FrontEnd stuff and name is for BackEnd stuff -->
                 <label for="email">Email Address *</label><br />
@@ -81,6 +81,7 @@
                 <textarea required cols="50" rows="8" maxlength="150" id="inquiry" name="inquiry"></textarea>
                 <br /><br />
                 <input type="submit" />
+                <button type="button" onclick="ClearForm()">Clear</button>
             </form>
         </article>
     </main>
@@ -89,7 +90,9 @@
         <br /><br />
         <a href="https://www.google.com" target="_blank">Search on Google</a>
     </footer>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="scripts/site.js"></script>
 </body>
 
 </html>

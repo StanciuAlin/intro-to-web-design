@@ -28,15 +28,16 @@
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <hr />
         <h2>Learning Website Development Technologies</h2>
-
-        <p class="differentLookingText WeirdColor">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+        <button onclick="printContent()">Print the content</button>
+        <p class="differentLookingText WeirdColor">Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem
             Ipsum has been the
             industry's
             standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
             make
             a type specimen book. It has survived not only five centuries, but also the leap into electronic
             typesetting,
-            remaining essentially unchanged. <br> <br> It was popularised in the 1960s with the release of Letraset
+            remaining essentially unchanged.<button>Heey</button> <br> <br> It was popularised in the 1960s with the release of Letraset
             sheets
             containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
             including versions of Lorem Ipsum.</p>
@@ -52,11 +53,23 @@
             <source src="music/videoplayback.mp3" type="video/mpeg" />
             Your browser does not support the audio format
         </audio>
+        <br>
+        <br>
+        <br>
+        <!-- For jQuery we don't need to use the onClick event but add an id or class attribute -->
+        <button id="jQueryBtn">Hide P Tags - jQuery</button>
+        <button onclick="hidePTags()">Hide P Tags - JavaScript</button>
     </div>
     <div id="footer">
         <br /><br />
         <a href="https://www.google.com" target="_blank">Search on Google</a>
     </div>
+
+    <!-- First in scripts in order to use jQuery in my JS scripts -->
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <!-- Use this CDN (Content Delivery Network) at publish and normal script downloaded for dev purposes -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script> -->
+    <script src="scripts/site.js"></script>
 </body>
 
 </html>
