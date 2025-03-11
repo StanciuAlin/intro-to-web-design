@@ -5,22 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css" />
     <link rel="stylesheet" href="stylesheets/site.css" />
 </head>
 
 <body>
     <header>
-        <div id="banner">
-            <p>Notification</p>
+        <div id="banner" class="bg-warning text-white text-center">
+            <p>Random website notification</p>
         </div>
-        <nav> <!-- semantic tag for nav bar -->
-            <a href="index.html">Home</a>
-            <a href="about_us.html">About Us</a>
-            <a href="contact_us.html">Contact Us</a>
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">My Site</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="about_us.html">About Us</a>
+                        <a class="nav-link" href="contact_us.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main> <!-- semantic tag for the main content of the website -->
+    <main class="container"> <!-- semantic tag for the main content of the website -->
         <h1>About Us</h1>
         <hr />
         <article>
@@ -43,31 +56,64 @@
         <article>
 
             <h2>Daily Tasks</h2>
-            <ul>
-                <li>Eat</li>
-                <li>Sleep</li>
-                <li>Play with the ball</li>
-            </ul>
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/puppy.jpg" style="width: 300; height: 250;" class="card-img-top" alt="Puppy">
+                        <div class="card-body">
+                            <h5 class="card-title">Eat</h5>
+                            <p class="card-text">I should eat all.</p>
+                            <a href="contact_us.html" class="btn btn-primary">View Food</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/bulldog.jpg" style="width: 300; height: 250;" class="card-img-top"
+                            alt="Bulldog">
+                        <div class="card-body">
+                            <h5 class="card-title">Sleep</h5>
+                            <p class="card-text">I should sleep 2 hours after lunch.</p>
+                            <a href="contact_us.html" class="btn btn-primary">Sleep info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/shepherd-dog.jpg" style="width: 300; height: 250;" class="card-img-top"
+                            alt="Shepherd">
+                        <div class="card-body">
+                            <h5 class="card-title">Play with the stick</h5>
+                            <p class="card-text">I should run for stick thrown.</p>
+                            <a href="contact_us.html" class="btn btn-primary">View ball games</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </article>
 
-        <article>
+        <article> <!-- Maybe use Accordion -->
             <h2>Top 3 favorite activities</h2>
-            <ol>
-                <li>Play with the family members</li>
-                <li>Play with the ball</li>
-                <li>Eat</li>
-                <li>
-                    <a href="contact_us.html">Contact my family</a>
-                </li>
-            </ol>
+            <div class="card" style="width: 18rem;">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item" id="top1">Play with the family members</li>
+                    <li class="list-group-item" id="top2">Play with the ball</li>
+                    <li class="list-group-item" id="top3">Eat</li>
+                    <li class="list-group-item">
+                        <button id="btnOpenContactUs" class="btn btn-primary">Contact my family</a>
+                    </li>
+                </ul>
+            </div>
         </article>
     </main>
     <footer> <!-- semantic tag for footer -->
         <br /><br />
         <a href="https://www.google.com" target="_blank">Search on Google</a>
     </footer>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/site.js"></script>
 </body>
 
 </html>

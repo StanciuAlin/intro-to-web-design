@@ -26,3 +26,24 @@ function printContent(){
         alert(words);
     }
 }
+
+// function openContactUs(){
+//     window.location.href="contact_us.html";
+// }
+
+$('#btnOpenContactUs').click(function(){
+    window.location.href = "contact_us.html"
+})
+
+$(function() {
+    var pages = ['index','about', 'contact'];
+    var pathName = window.location.pathname;
+
+    $('.nav-link').each(function(item){
+        if(pathName.includes(pages[item])) {
+            $(this).addClass('active'); // this represent the current nav-link which enters in if statement
+            $(this).attr('aria-current', 'page');
+        }
+    })
+}
+);

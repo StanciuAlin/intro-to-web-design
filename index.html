@@ -3,32 +3,85 @@
 
 <head>
     <title>Home Page</title>
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css" />
     <link rel="stylesheet" href="stylesheets/site.css" />
 </head>
 
 <body>
     <div id="header">
-        <div id="banner">
+        <div id="banner" class="bg-warning text-white text-center">
             <p>Random website notification</p>
         </div>
-        <div id="nav">
-            <!-- Anchor tags used for internal navigation -->
-            <a href="index.html">Home</a>
-            <a href="about_us.html">About Us</a>
-            <a href="contact_us.html">Contact Us</a>
-        </div>
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Doggy</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="about_us.html">About Us</a>
+                        <a class="nav-link" href="contact_us.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </div>
-    <div id="main">
+    <div id="main" class="container">
         <h1>Home Page</h1>
-        <!-- Sample iframe embedding YouTube video -->
-        <h2>Welcome to my page! Please enjoy the music</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/YnHJCs0Yjoo?si=PiO0-oSCzW7riB3E"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <hr />
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="images/dog1.jpg" class="d-block w-100" alt="Dog">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/dog2.jpg" class="d-block w-100" alt="Dog">
+                </div>
+                <div class="carousel-item active">
+                    <img src="images/dog3.jpg" class="d-block w-100" alt="Dog">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/bulldog.jpg" class="d-block w-100" alt="Dog">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/shepherd-dog.jpg" class="d-block w-100" alt="Dog">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/puppy.jpg" class="d-block w-100" alt="Dog">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <br>
+        <br>
         <h2>Learning Website Development Technologies</h2>
-        <button onclick="printContent()">Print the content</button>
+        <button class="btn btn-secondary" onclick="printContent()">Print the content</button>
         <p class="differentLookingText WeirdColor">Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem
             Ipsum has been the
@@ -37,36 +90,68 @@
             make
             a type specimen book. It has survived not only five centuries, but also the leap into electronic
             typesetting,
-            remaining essentially unchanged.<button>Heey</button> <br> <br> It was popularised in the 1960s with the release of Letraset
+            remaining essentially unchanged. <br> <br> It was popularised in the 1960s with the
+            release of Letraset
             sheets
             containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
             including versions of Lorem Ipsum.</p>
 
-        <!-- Embedding video and audio -->
-        <h2>Custom video</h2>
-        <video width="560" height="315" controls>
-            <source src="videos/videoplayback.mp4" type="video/mp4" />
-            Your browser does not support the video format
-        </video>
-        <br />
-        <audio controls>
-            <source src="music/videoplayback.mp3" type="video/mpeg" />
-            Your browser does not support the audio format
-        </audio>
-        <br>
-        <br>
-        <br>
-        <!-- For jQuery we don't need to use the onClick event but add an id or class attribute -->
-        <button id="jQueryBtn">Hide P Tags - jQuery</button>
-        <button onclick="hidePTags()">Hide P Tags - JavaScript</button>
+        <div class="row">
+            <div class="col">
+                <!-- Sample iframe embedding YouTube video -->
+                <h2>Enjoy the music</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YnHJCs0Yjoo?si=PiO0-oSCzW7riB3E"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>It was popularised in the 1960s with the
+                    release of Letraset
+                    sheets
+                    containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                    PageMaker
+                    including versions of Lorem Ipsum.</p>
+            </div>
+            <div class="col">
+                <!-- Embedding video and audio -->
+                <h2>Custom video</h2>
+                <video width="560" height="315" controls>
+                    <source src="videos/videoplayback.mp4" type="video/mp4" />
+                    Your browser does not support the video format
+                </video>
+                <br />
+                <audio controls>
+                    <source src="music/videoplayback.mp3" type="video/mpeg" />
+                    Your browser does not support the audio format
+                </audio>
+            </div>
+        </div>
+        <div class="text-center">
+            <!-- For jQuery we don't need to use the onClick event but add an id or class attribute -->
+            <button class="btn btn-danger btn-lg" id="jQueryBtn">Hide P Tags - jQuery</button>
+            <button class="btn btn-outline-danger btn-lg" onclick="hidePTags()">Hide P Tags - JavaScript</button>
+        </div>
     </div>
-    <div id="footer">
-        <br /><br />
-        <a href="https://www.google.com" target="_blank">Search on Google</a>
-    </div>
+
+    <footer class="py-3 mt-4 bg-secondary" data-bs-theme="dark"> <!-- py = Padding y, mt = margin top -->
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link px-2 text-body-secondary">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="contact_us.html" class="nav-link px-2 text-body-secondary">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="about_us.html" class="nav-link px-2 text-body-secondary">Contact Us</a>
+            </li>
+        </ul>
+        <p class="text-center text-body-secondary">&copy;
+            <a class="nav-link" href="https://www.google.com" target="_blank">Search on Google</a>
+        </p>
+    </footer>
 
     <!-- First in scripts in order to use jQuery in my JS scripts -->
     <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
     <!-- Use this CDN (Content Delivery Network) at publish and normal script downloaded for dev purposes -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script> -->
     <script src="scripts/site.js"></script>
